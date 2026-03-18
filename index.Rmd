@@ -93,7 +93,7 @@ Independent judgement: Sentinel-2 is excellent as a <span class="accent">baselin
 
 ---
 
-# 3) Application Scope and Assessment Logic
+# 3) Application Scope in Urban Remote Sensing
 
 .pull-left[
 ### Common urban uses in the literature
@@ -106,18 +106,16 @@ Independent judgement: Sentinel-2 is excellent as a <span class="accent">baselin
 ]
 
 .pull-right[
-### How this presentation matches marking
+### Analytical framing for the case studies
 <div class="card">
 <ul class="tight">
-<li><b>Summary:</b> explain sensor capability + limits</li>
-<li><b>Application:</b> compare published case studies and purpose</li>
-<li><b>Reflection:</b> state what I learned and future use</li>
+<li><b>Problem focus:</b> what urban question each study addresses</li>
+<li><b>Method strategy:</b> model and feature choices with Sentinel-2</li>
+<li><b>Evidence quality:</b> where the approach is strong and where limits remain</li>
+<li><b>Practice value:</b> how findings can support urban planning decisions</li>
 </ul>
 </div>
 
-<div class="study-note">
-I review three peer-reviewed studies and evaluate their method choices for urban practice.
-</div>
 ]
 
 ---
@@ -208,18 +206,37 @@ Image: Manhattan by Sentinel-2, Copernicus attribution via Wikimedia Commons
 
 # 7) Cross-Study Comparison (Why It Matters)
 
-<div class="matrix">
+Across the three studies, one pattern is clear: stronger urban classification comes from combining model design, temporal strategy, and interpretability.
 
-| Study | Main contribution | Practical implication |
-|:--|:--|:--|
-| Zhang et al. (2021) | Optimized RF with Sentinel-2 features | Strong baseline for fast, operational urban mapping |
-| Xu et al. (2022) | Spectro-spatio-temporal design | Scene timing and seasonal stacking improve separability |
-| Hosseiny et al. (2022) | Interpretable deep/shallow comparison | Better accuracy should be paired with explainable outputs |
-
-</div>
+<table class="matrix-table">
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>What it adds</th>
+      <th>Why it matters for urban analysis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Zhang et al. (2021)</td>
+      <td>Optimized RF with Sentinel-2 features</td>
+      <td>Use as a reliable baseline before trying heavier models</td>
+    </tr>
+    <tr>
+      <td>Xu et al. (2022)</td>
+      <td>Spectro-spatio-temporal design</td>
+      <td>Prioritize season-aware image selection, not only model tuning</td>
+    </tr>
+    <tr>
+      <td>Hosseiny et al. (2022)</td>
+      <td>Interpretable shallow/deep comparison</td>
+      <td>Pair higher accuracy with explainability for planning decisions</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="card">
-Synthesis: Sentinel-2 works best when we combine <b>good feature design</b>, <b>time-aware data selection</b>, and <b>interpretable modelling</b>.
+Synthesis: Sentinel-2 performs best when workflows combine <b>baseline robustness</b>, <b>time-aware data design</b>, and <b>interpretable modelling</b>.
 </div>
 
 ---
@@ -248,8 +265,6 @@ I learned that sensor choice is a methodological decision, not a default. Sentin
 
 # References
 
-<div class="refs">
-
 **Core sensor sources**
 
 - Copernicus Sentinel-2 mission page: https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2
@@ -266,5 +281,3 @@ I learned that sensor choice is a methodological decision, not a default. Sentin
 
 - ESA/J. Mai (Sentinel-2A launch at ESOC), via Wikimedia Commons.
 - Copernicus Sentinel-2 imagery (Chicago, London, Manhattan), via Wikimedia Commons.
-
-</div>

@@ -105,7 +105,7 @@ Independent judgement: Sentinel-2 is excellent as a &lt;span class="accent"&gt;b
 
 ---
 
-# 3) Application Scope and Assessment Logic
+# 3) Application Scope in Urban Remote Sensing
 
 .pull-left[
 ### Common urban uses in the literature
@@ -118,18 +118,16 @@ Independent judgement: Sentinel-2 is excellent as a &lt;span class="accent"&gt;b
 ]
 
 .pull-right[
-### How this presentation matches marking
+### Analytical framing for the case studies
 &lt;div class="card"&gt;
 &lt;ul class="tight"&gt;
-&lt;li&gt;&lt;b&gt;Summary:&lt;/b&gt; explain sensor capability + limits&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Application:&lt;/b&gt; compare published case studies and purpose&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Reflection:&lt;/b&gt; state what I learned and future use&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Problem focus:&lt;/b&gt; what urban question each study addresses&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Method strategy:&lt;/b&gt; model and feature choices with Sentinel-2&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Evidence quality:&lt;/b&gt; where the approach is strong and where limits remain&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Practice value:&lt;/b&gt; how findings can support urban planning decisions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div class="study-note"&gt;
-I review three peer-reviewed studies and evaluate their method choices for urban practice.
-&lt;/div&gt;
 ]
 
 ---
@@ -220,18 +218,37 @@ Image: Manhattan by Sentinel-2, Copernicus attribution via Wikimedia Commons
 
 # 7) Cross-Study Comparison (Why It Matters)
 
-&lt;div class="matrix"&gt;
+Across the three studies, one pattern is clear: stronger urban classification comes from combining model design, temporal strategy, and interpretability.
 
-| Study | Main contribution | Practical implication |
-|:--|:--|:--|
-| Zhang et al. (2021) | Optimized RF with Sentinel-2 features | Strong baseline for fast, operational urban mapping |
-| Xu et al. (2022) | Spectro-spatio-temporal design | Scene timing and seasonal stacking improve separability |
-| Hosseiny et al. (2022) | Interpretable deep/shallow comparison | Better accuracy should be paired with explainable outputs |
-
-&lt;/div&gt;
+&lt;table class="matrix-table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Study&lt;/th&gt;
+      &lt;th&gt;What it adds&lt;/th&gt;
+      &lt;th&gt;Why it matters for urban analysis&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Zhang et al. (2021)&lt;/td&gt;
+      &lt;td&gt;Optimized RF with Sentinel-2 features&lt;/td&gt;
+      &lt;td&gt;Use as a reliable baseline before trying heavier models&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Xu et al. (2022)&lt;/td&gt;
+      &lt;td&gt;Spectro-spatio-temporal design&lt;/td&gt;
+      &lt;td&gt;Prioritize season-aware image selection, not only model tuning&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Hosseiny et al. (2022)&lt;/td&gt;
+      &lt;td&gt;Interpretable shallow/deep comparison&lt;/td&gt;
+      &lt;td&gt;Pair higher accuracy with explainability for planning decisions&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;div class="card"&gt;
-Synthesis: Sentinel-2 works best when we combine &lt;b&gt;good feature design&lt;/b&gt;, &lt;b&gt;time-aware data selection&lt;/b&gt;, and &lt;b&gt;interpretable modelling&lt;/b&gt;.
+Synthesis: Sentinel-2 performs best when workflows combine &lt;b&gt;baseline robustness&lt;/b&gt;, &lt;b&gt;time-aware data design&lt;/b&gt;, and &lt;b&gt;interpretable modelling&lt;/b&gt;.
 &lt;/div&gt;
 
 ---
@@ -260,8 +277,6 @@ I learned that sensor choice is a methodological decision, not a default. Sentin
 
 # References
 
-&lt;div class="refs"&gt;
-
 **Core sensor sources**
 
 - Copernicus Sentinel-2 mission page: https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2
@@ -278,8 +293,6 @@ I learned that sensor choice is a methodological decision, not a default. Sentin
 
 - ESA/J. Mai (Sentinel-2A launch at ESOC), via Wikimedia Commons.
 - Copernicus Sentinel-2 imagery (Chicago, London, Manhattan), via Wikimedia Commons.
-
-&lt;/div&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
